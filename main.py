@@ -3,7 +3,7 @@ import mysql.connector as sqlctr
 from tkinter import *
 
 root = Tk()
-root.title("Shyam Computer Academy")
+root.title("YOUR ORGANISATION NAME")
 # functions
 
 
@@ -33,7 +33,7 @@ def connect_server():
                     host="localhost",
                     user="root",
                     password=ps,
-                    database="SCA_DB"
+                    database="YOUR ORGANISATION_DB"
                 )
             except:
                 pass
@@ -63,7 +63,7 @@ def connect_server():
             except:
                 pass
             return connection
-        q1 = f"""create database if not exists SCA_DB;"""
+        q1 = f"""create database if not exists YOUR ORGANISATION_DB;"""
         cs = connect_server1()
         eq = execute_query(cs, q1)
         options = Tk()
@@ -101,7 +101,7 @@ def connect_server():
                 Label(options, text="Opening  Storing Student & Fee in Server  Window!",
                       bg="black", fg="green").grid()
                 w1 = Tk()
-                w1.title("SCA | Storing Fee details.")
+                w1.title("SHORT FORM OF YOUR ORGANISATION | Storing Fee details.")
                 w1.geometry("900x400")
                 w1.maxsize(900, 400)
                 w1.minsize(900, 400)
@@ -173,7 +173,7 @@ def connect_server():
                 Label(options, text="Opening Check Fee Status Window!",
                       bg="black", fg="green").grid()
                 w2 = Tk()
-                w2.title("SCA | Check Fee Status.")
+                w2.title("SHORT FORM OF YOUR ORGANISATION | Check Fee Status.")
                 w2.geometry("900x400")
                 w2.maxsize(900, 400)
                 w2.minsize(900, 400)
@@ -233,7 +233,7 @@ def connect_server():
                 Label(options, text="Opening  Updating Details Window!",
                       bg="black", fg="green").grid()
                 w3 = Tk()
-                w3.title("SCA | Updating details.")
+                w3.title("SHORT FORM OF YOUR ORGANISATION | Updating details.")
                 w3.geometry("900x400")
                 w3.maxsize(900, 400)
                 w3.minsize(900, 400)
@@ -276,7 +276,7 @@ def connect_server():
                 Label(options, text="Opening  Deleting Details Window!",
                       bg="black", fg="green").grid()
                 w4 = Tk()
-                w4.title("SCA | Deleting details.")
+                w4.title("SHORT FORM OF YOUR ORGANISATION | Deleting details.")
                 w4.geometry("900x400")
                 w4.maxsize(900, 400)
                 w4.minsize(900, 400)
@@ -314,7 +314,7 @@ def connect_server():
                 Label(options, text="Opening  Check All Data in Server Window!",
                       bg="black", fg="green").grid()
                 w5 = Tk()
-                w5.title("SCA | Check All Data in Server.")
+                w5.title("SHORT FORM OF YOUR ORGANISATION | Check All Data in Server.")
                 w5.geometry("900x400")
                 w5.maxsize(900, 400)
                 w5.minsize(900, 400)
@@ -365,7 +365,7 @@ labelI = Label(root, image=bg)
 labelI.place(x=0, y=0)
 photo = PhotoImage(file = "bg.png")
 root.iconphoto(False, photo)
-label = Label(root, text="SHYAM COMPUTER ACADEMY",bg="blue", fg="yellow", font="bold")
+label = Label(root, text="YOUR ORGANISATION NAME",bg="blue", fg="yellow", font="bold")
 label.grid()
 pw = Label(root, text="Enter Server Password : ")
 pw.grid(row=1)
